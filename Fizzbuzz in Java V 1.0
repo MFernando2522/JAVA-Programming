@@ -1,0 +1,68 @@
+//Name: Marc F
+//Date: 1/15/2024
+//Code that checks divisibility, fizzbuzz assignment
+
+public class Main {
+  public static void main(String[] args) {
+
+    //int x = (int)(Math.random() * 101); 
+    //This code snippet above gives a random number from 1-100, works but not what we are supposed to do
+    
+    
+    //System.out.println(x);  //Code that checks if it works
+    
+    //Fizzbuzz code, checks in order 15,5,3,else with uh
+    int x = 3;
+    int y = 5;
+    int z = 15;
+    int a = 1;
+    
+    if (x % 15 == 0) {
+      System.out.println("fizzbuzz");
+    }
+    else if (x % 3 == 0) {
+        System.out.println("fizz");
+    }
+    else if (x % 5 == 0) {
+        System.out.println("buzz");
+    }
+    else {
+        System.out.println("uhhhh");
+  }  //FOR Y
+      if (y % 15 == 0) {
+      System.out.println("fizzbuzz");
+    }
+    else if (y % 3 == 0) {
+        System.out.println("fizz");
+    }
+    else if (y % 5 == 0) {
+        System.out.println("buzz");
+    }
+    else {
+        System.out.println("uhhhh");
+  } //FOR Z
+      if (z % 15 == 0) {
+      System.out.println("fizzbuzz");
+    }
+    else if (z % 3 == 0) {
+        System.out.println("fizz");
+    }
+    else if (z % 5 == 0) {
+        System.out.println("buzz");
+    }
+    else {
+        System.out.println("uhhhh");
+  } //FOR A
+      if (a % 15 == 0) {
+      System.out.println("fizzbuzz");
+    }
+    else if (a % 3 == 0) {
+        System.out.println("fizz");
+    }
+    else if (a % 5 == 0) {
+        System.out.println("buzz");
+    }
+    else {
+        System.out.println("uhhhh");
+  }
+}}
