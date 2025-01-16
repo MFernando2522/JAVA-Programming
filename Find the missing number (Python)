@@ -4,7 +4,7 @@
 
 import random
 listSize = random.randrange(1,15)
-print(listSize)
+#print(listSize)
 
 theList = []
 
@@ -14,7 +14,7 @@ for i in range(1, listSize + 1):
 
 #Removes a random number
 variableRemoved = random.randrange(0,listSize)
-print(variableRemoved+1)
+#print(variableRemoved+1)
 #x = theList.del(variableRemoved)
 del theList[variableRemoved]
 #print("TEST")
