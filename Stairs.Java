@@ -1,6 +1,6 @@
 //NAME: MARC
 //DATE: 1/24/2025
-//UNFINISHED, PRINTS STAIRS BUT MESSED UP, LOGIC ERROR
+//Whats messed up: WRITTEN WITH **
 
 import java.util.Scanner;  // Import the Scanner class
 
@@ -21,10 +21,21 @@ public class Stairs {
         //int numberToLoop = nameOfInput.nextInt();
         //double function = nameOfInput.nextDouble();
         
+
+        //Counters:
+      int numberToLoop1 = numberToLoop;
+      int numberToLoop2 = 1;
+
         //For loop for the numbers
     for (int i = 0; i < numberToLoop; i++) {
-      	System.out.println(" ".repeat(numberToLoop-i) + "#".repeat(numberToLoop+i));
+      	System.out.println(" ".repeat(numberToLoop1) + "#".repeat(numberToLoop2)); //**This had + and - at the end, not as a counter
         //System.out.println("String :"+string.repeat(count)); 
+        //**These help iterate through the counter, which helps the total numbers go up and down
+        //**Does totalNumberofInput - spaces = characters
+        numberToLoop1 -= 1; 
+        numberToLoop2 += 1;
+
+
 
     
 
@@ -38,4 +49,6 @@ public class Stairs {
             //for j in range (n):
                 //if i+j == n-1:
                     //print(" "*j+"#"*(n-j))
+
+
 
