@@ -1,3 +1,4 @@
+
 import java.util.Scanner; // import the Scanner class 
 
 public class Main {
@@ -26,12 +27,14 @@ public class Main {
         totalNumber += 1;
         System.out.println(countingDown);
     }}
+    
     }
-   }
+    }
     public static void main(String[] args) {
     myMethod();
     }
 }
+
 
 
 
