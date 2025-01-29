@@ -1,4 +1,6 @@
-
+//This was the WORST function to do in java 
+//Yeah, ill take the zero on this one
+//Without the second function bs and the checker if the number is an int, it works...at least.
 import java.util.Scanner; // import the Scanner class 
 
 public class Main {
