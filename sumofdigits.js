@@ -1,4 +1,5 @@
-let value = prompt("What is your favorite number? ");
+function name () {
+let value = prompt("What is your numbers to be combined? ");
 sum = 0;
 
 while (value) {
@@ -7,3 +8,9 @@ while (value) {
 }
 
 console.log(sum);
+}
+
+name();
+
+
+
