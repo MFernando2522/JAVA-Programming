@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.Scanner;
+
+class factorialInJavaWithNoFactorialFunction {
+    public static void myMethod() {
+        // Declare the variables
+        int num;
+        int factorial = 1;
+        // Input the integer
+        System.out.print("Enter the integer: ");
+
+        // Create Scanner object
+        Scanner s = new Scanner(System.in);
+
+        // Read the next integer from the screen
+        num = s.nextInt();
+        
+        //THis for loop does int i at the loop
+        //then it checks if its above the loop
+        //Finally, it subtracts 1 from i, until its not ==
+        for (int i = num; i > 1; i--){
+        
+        //Formula, just do num * i
+            factorial *= i;
+            
+            
+            //System selffff checker
+            //System.out.println(factorial);
+        }
+
+        // Display the integer TEST
+        System.out.println("The factorial of " + num + " is " + factorial + ".");
+
+    }
+    
+    public static void main(String args[]) {
+        myMethod();
+    }
+}
