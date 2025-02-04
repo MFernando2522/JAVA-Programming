@@ -1,0 +1,92 @@
+// Import necessary classes
+import java.util.Scanner; //Import scanner to scan for input
+
+public class JavaQuickMaths {
+    public static void main(String[] args ) {
+    // word word word word(Word[] word)    
+
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Looping from 1.0 to 5.0 with rounding methods: ");
+        // 1. Loop from 1.0 to 5.0, incrementing by 0.5
+        for (double i = 1.0; i <= 5.0; i += 0.5) {  
+//CODING EXPLAIN YEAH, this like checks double float BY (START AT 1.0, STOP WHEN OVER 5.0, ADD 0.5)!!!!!!
+    
+        //    - Print the number
+            System.out.print("Number: " + i);
+        //    - Apply and print results of:
+        //      - Math.ceil()
+            System.out.print(" Ceil: " + Math.ceil(i));
+        //      - Math.floor()
+            System.out.print(" Floor: " + Math.floor(i));
+        //      - Math.rint()
+            System.out.print(" Rint: " + Math.rint(i));
+        //      - Math.round()
+            System.out.print(" Round: " + Math.round(i) + "\n"); //WE ADD A NEW LINE FOR FORMATTING CODE 
+        }
+        
+        // 2. Prompt the user to enter a decimal number
+        System.out.print("\nEnter a decimal number: ");
+        //    - Store the number
+        float a = scanner.nextFloat();
+        //    - Print the rounding results (ceil, floor, rint, round)
+        System.out.println("Ceil: " + Math.ceil(a) + " Floor: " + Math.floor(a) + " Rint: " + Math.rint(a) + " Round: " + Math.round(a));
+        
+        // 3. Prompt the user to enter an integer
+        System.out.print("\nEnter a integer: ");
+        //    - Store the integer
+        int b = scanner.nextInt();
+        //    - Prompt the user to enter a string
+        System.out.print("Enter a word: ");
+        //    - Store the string
+        String c = scanner.next();
+        //    - Print the entered integer and string
+        System.out.println("You entered integer: " + b + "\nYou entered string: " + c);
+        
+        // 4. Demonstrate type casting
+        //    - Convert the integer to double (implicit cast) and print
+        int intToDouble = b;
+        double intToDoubleOutput = intToDouble;
+        System.out.println("\nImplicit cast (int -> double): " + intToDoubleOutput);
+
+        //    - Convert the decimal number to int (explicit cast) and print
+        double decimalToInt = b;
+        int decimalToIntOutput = (int) decimalToInt;
+        System.out.println("Explicit cast (double -> int): " + decimalToIntOutput);
+
+        //    - Convert the integer to a char (ASCII representation) and print
+        int intToChar = b;
+        char intToCharOutput = (char) intToChar;
+        System.out.println("Casting int to char (ASCII): " + intToCharOutput);
+        
+        // 5. Prompt the user to enter a character
+        System.out.print("\nEnter a character: ");
+        //    - Store the character
+        char ch = scanner.next().charAt(0);
+        //int convertedch = Character.getNumericValue(ch);
+        //    - Convert the character to its ASCII value (int) and print
+        System.out.println("ASCII value of " + ch + " is: " + (int)(ch));
+        
+        // 6. Demonstrate String vs. new String()
+        //    - Create a String literal and assign it to two variables
+        String stringLiteral1 = "This is a string.";
+        String stringLiteral2 = "This is a string.";
+
+        //    - Create another String using new String()
+        String newStringName = new String("This is a string.");
+        //    - Compare the first two strings using == (reference check)
+        //    - Compare one literal with the new String() object using ==
+        //stringLiteral1 == newStringName;
+        //    - Compare the content of both strings using .equals()
+        //stringLiteral1.equals(stringLiteral2);
+        //    - Print the results
+        System.out.println("str1 == str2: "+ (stringLiteral1 == stringLiteral2));
+        System.out.println("str1 == str3: "+ (stringLiteral1 == newStringName));
+        System.out.println("str1.equals(str3): "+ (stringLiteral1.equals(newStringName)));
+
+
+        // Close the Scanner object
+        scanner.close();
+    }
+}
