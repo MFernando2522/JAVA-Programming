@@ -11,7 +11,7 @@ class GuessNumber {
         int number = 1 + (int)(100* Math.random());
 
         //Selfff checker for syntax yuhr coding thing ifgnoire this
-        //System.out.print(number);
+        System.out.print(number);
         System.out.println("Guess a magic number between 0 and 100");
 
         int guess;
@@ -28,10 +28,10 @@ class GuessNumber {
                 break; //For exit looping breakkkkKKKKKKKKKKKKK
             }
             else if (number > guess) {
-                System.out.println("Your guess is too low");  //HINTTT
+                System.out.println("Your guess is too low \n\n");  //HINTTT
             }
             else if (number < guess) {
-                System.out.println("Your guess is too high"); //AOTEHRrerRE HINTTTT
+                System.out.println("Your guess is too high\n\n"); //AOTEHRrerRE HINTTTT
             }
         }
         while(true);  //sudo code said to do this. I do break i swear it doesnt always run guys
