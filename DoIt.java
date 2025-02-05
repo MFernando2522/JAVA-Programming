@@ -1,22 +1,25 @@
 // BEGIN
+import java.util.Scanner;
 
 
 class DoIt {
     public static void main(String[] args) {
-        int number;
-        int main()
+        do {
+        Scanner userInput = new Scanner(System.in);
 
-// Declare a variable for user input
+        System.out.print("Enter a positive number: ");
 
+        int checkInput = userInput.nextInt();
 
-// REPEAT AT LEAST ONCE
-// DO
-//     Prompt the user to enter a positive number
-//     Read input
-// WHILE (input is negative)
-
-// Display valid input message
-
-// END
+            if (checkInput < 0) {
+                System.out.println("Invalid input. Try again.");
+                continue;
+            }
+            if (checkInput > 0); {
+                System.out.println("You entered " + checkInput);
+                break;
+            }
+        }
+        while (true); //I cant import a scanner as a var int, so while true sorry
     }
 }
