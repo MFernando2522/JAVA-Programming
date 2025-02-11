@@ -1,0 +1,99 @@
+import java.util.Scanner;
+//I LOVE IMPORTING DA SCANNNERRRRRRRRRR
+
+public class AllInOne {
+    public static void processNumbers(int num1, int num2, int num3) {
+
+        //All this code bashically does is the process steps in order of the original code
+        //Goes in order of sum, max, min avereage and allPositive ----> finally, print
+        //Uhhhhhh yeah just main(); type stuff but more complex and nerd emoji yeaHHH
+        int sum = addMethod(num1, num2, num3);
+        int max = maxMethod(num1, num2, num3);
+        int min = minMethod(num1, num2, num3);
+        double average = averageMethod(sum);
+        boolean allPositive = positivecheckMethod(num1, num2, num3);
+
+        //System.out????  Nah, imma print METHOD MUHAHAHAHAHAHHA
+        printMethod(sum, max, min, average, allPositive, num1, num2, num3);
+    } 
+
+    //Everything between this is code given in prompt, just added a method to each function and did return.
+//------------------------------------------------------
+    public static int addMethod(int num1, int num2, int num3) {
+        int sum = num1 + num2 + num3;
+        return sum;
+    }
+
+    public static int maxMethod(int num1, int num2, int num3) {
+        int max = num1;
+        if (num2 > max) {
+            max = num2;
+        }
+        if (num3 > max) {
+            max = num3;
+        }
+        return max;
+    }
+
+
+    public static int minMethod(int num1, int num2, int num3) {
+        int min = num1;
+        if (num2 < min) {
+            min = num2;
+        }
+        if (num3 < min) {
+            min = num3;
+        }
+        return min;
+    }
+
+    public static double averageMethod(int sum) {
+        double average = sum / 3.0;
+        return average;
+    }
+
+    public static boolean positivecheckMethod(int num1, int num2, int num3) {
+        boolean allPositive = (num1 > 0 && num2 > 0 && num3 > 0);
+        return allPositive;
+    }
+
+    public static void getUserInput() {
+        //Scanner to get user input
+        Scanner scannerName = new Scanner(System.in);
+
+        //This prompts for user numbers AAGAGHSGAGYAGHHHHHHH
+
+        System.out.print("Enter a number: (1/3) ");
+        int num1 = scannerName.nextInt();
+        System.out.print("Enter another number: (2/3) ");
+        int num2 = scannerName.nextInt();
+        System.out.print("Enter a final number: (3/3) ");
+        int num3 = scannerName.nextInt();
+
+        //Sends this to the slammer called processNumbers
+        processNumbers(num1, num2, num3);
+
+        //uhhhh leaky leaky code buwahhhhh stop that no code leaks nuh uhhhh 
+        scannerName.close();
+    }
+
+    //OUTPUT HERE HEHEHEHEHEHE
+    public static void printMethod(int sum, int max, int min, double average, boolean allPositive, int num1, int num2, int num3) {
+        System.out.println("Sum: " + sum);
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
+        System.out.println("Average: " + average);
+        System.out.println("All numbers are positive: " + allPositive);
+        System.out.println("Formatted Output: The sum of " + num1 + ", " + num2 + ", and " + num3 + " is " + sum + ".");
+    }
+//------------------------------------------------------
+
+    //------------------Main-----------------------------
+    public static void main(String[] args) {
+        //processNumbers(5, 8, 3);  //Old code I MUR.... i mean commented out heh
+        getUserInput();
+        //Needs input to get in the first place so it goes here smh
+
+
+    }
+}
