@@ -58,17 +58,49 @@ public class AllInOne {
     }
 
     public static void getUserInput() {
-        //Scanner to get user input
+        //Scanner to get user input, only needs to run once
         Scanner scannerName = new Scanner(System.in);
 
-        //This prompts for user numbers AAGAGHSGAGYAGHHHHHHH
+        //Shoutout to stack overeflow
+        int num1 = 0; //Makes sure its an int cause its int num1
+        while (true) { //WHILE TRUE GRAHHHHHHHHH
+            try {
+                System.out.println("Enter a number (1/3): ");
 
-        System.out.print("Enter a number: (1/3) ");
-        int num1 = scannerName.nextInt();
-        System.out.print("Enter another number: (2/3) ");
-        int num2 = scannerName.nextInt();
-        System.out.print("Enter a final number: (3/3) ");
-        int num3 = scannerName.nextInt();
+                //Setting num1 to parseINTTT makes it so if its INTTT it passes
+                num1 = Integer.parseInt(scannerName.next());
+                break; //Murde... breaks to next while true lol
+
+            //Keep getting yellow for this, Exception catches all so it just goes again lol
+            } catch (Exception  e) {
+                
+                //Erm, unnessasairy conti- I WILL PLACE THIS HERE NUH UH 
+                continue;
+            }
+        }
+
+        //Ok do this two more times im not commenting allathat srry
+        int num2 = 0;
+        while (true) {
+            try {
+                System.out.println("Enter a number (2/3): ");
+                num2 = Integer.parseInt(scannerName.next());
+                break;
+            } catch (Exception  e) {
+                continue;
+            }
+        }
+
+        int num3 = 0;
+        while (true) {
+            try {
+                System.out.println("Enter a number (3/3): ");
+                num3 = Integer.parseInt(scannerName.next());
+                break;
+            } catch (Exception  e) {
+                continue;
+            }
+        }
 
         //Sends this to the slammer called processNumbers
         processNumbers(num1, num2, num3);
